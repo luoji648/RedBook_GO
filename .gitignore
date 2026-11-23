@@ -1,0 +1,6 @@
+/bin/
+/redbook-go
+/config/config.yaml
+*.log
+.idea/
+.vscode/

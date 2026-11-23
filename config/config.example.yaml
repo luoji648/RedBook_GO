@@ -1,0 +1,38 @@
+server:
+  port: 8081
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: "123456"
+  database: redbook
+
+redis:
+  addr: 192.168.220.128:6379
+  password: "123321"
+  db: 1
+
+jwt:
+  secret: "redbook-jwt-secret-key-change-me-in-production-min-32-chars!!"
+  expire_seconds: 36000
+
+dify:
+  url: "http://localhost/v1/chat-messages"
+  note_assistant_key: "app-placeholder"
+
+oss:
+  endpoint: "oss-cn-beijing.aliyuncs.com"
+  access_key_id: ""
+  access_key_secret: ""
+  bucket: ""
+  url_prefix: ""
+
+rocketmq:
+  enabled: false
+  name_server: "192.168.220.128:9876"
+  producer_group: "redbook-producer-group"
+  consumer_group: "redbook-consumer-group"
+  click_topic: "click-topic"
+  click_record_topic: "click-record-topic"
+  click_summary_topic: "click-summary-topic"
